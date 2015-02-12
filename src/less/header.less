@@ -1,11 +1,76 @@
 .header{
   background: rgba(255,255,255,.5);
+  padding: 14px 90px 0 100px;
+  height: 94px;
 }
 
+// logo
+.header__logo{
+  width: 100px;
+  height: 69px;
+  float:left;
+  a{
+    height: inherit;
+    width: inherit;
+  }
+}
+
+.logo{
+  height: inherit;
+  width: inherit;
+}
+// menu
+.header__navbar{
+  float:left;
+  margin-left: 60px;
+}
+// .navbar{
+//   float:left;
+//   margin-left: 60px;
+// }
 .navbar__item{
-  font-family: 'robotomedium';
-  font-size: 7px;
+  font-family: 'robotoregular';
+  font-size: 14px;
+  font-weight: bold;
   list-style: none;
   text-transform: uppercase;
+  display: inline-block;
   color: @menuBlack;
+  margin-left: 27px;
+  margin-top: 29px;
+  cursor: pointer;
+  &:hover{
+    color: @menuGray;
+  }
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.navbar__item--active{
+  color: @blue;
+}
+
+// phone number
+.header__tel{
+  float: left;
+  margin-left: 134px;
+  margin-top: 18px;
+}
+
+.tel__number{
+  font-size: 29px;
+  font-family: 'robotomedium';
+  color: @phoneBlack;
+  letter-spacing: .6px;
+}
+
+.tel__order-call{
+  text-align: right;
+  margin-top: 6px;
+}
+
+.order-call{
+  color: @blue;
+  font-family: 'robotolight';
+  font-size: 16px;
 }

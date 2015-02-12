@@ -2,6 +2,17 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
 html,
 body,
 div,
@@ -150,13 +161,70 @@ table {
   font-style: normal;
 }
 
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
 .header {
   background: rgba(255, 255, 255, 0.5);
+  padding: 14px 90px 0 100px;
+  height: 94px;
+}
+.header__logo {
+  width: 100px;
+  height: 69px;
+  float: left;
+}
+.header__logo a {
+  height: inherit;
+  width: inherit;
+}
+.logo {
+  height: inherit;
+  width: inherit;
+}
+.header__navbar {
+  float: left;
+  margin-left: 60px;
 }
 .navbar__item {
-  font-family: 'robotomedium';
-  font-size: 7px;
+  font-family: 'robotoregular';
+  font-size: 14px;
+  font-weight: bold;
   list-style: none;
   text-transform: uppercase;
+  display: inline-block;
   color: #231f20;
+  margin-left: 27px;
+  margin-top: 29px;
+  cursor: pointer;
+}
+.navbar__item:hover {
+  color: #7a7a7a;
+}
+.navbar__item:first-child {
+  margin-left: 0;
+}
+.navbar__item--active {
+  color: #009bdf;
+}
+.header__tel {
+  float: left;
+  margin-left: 134px;
+  margin-top: 18px;
+}
+.tel__number {
+  font-size: 29px;
+  font-family: 'robotomedium';
+  color: #333333;
+  letter-spacing: .6px;
+}
+.tel__order-call {
+  text-align: right;
+  margin-top: 6px;
+}
+.order-call {
+  color: #009bdf;
+  font-family: 'robotolight';
+  font-size: 16px;
 }
