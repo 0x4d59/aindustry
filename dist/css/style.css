@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
 .clearfix {
   zoom: 1;
 }
@@ -160,15 +168,65 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'museo_sans_cyrl700';
+  src: url('../../src/fonts/museosanscyrl-700-webfont.eot');
+  src: url('../../src/fonts/museosanscyrl-700-webfont.eot?#iefix') format('embedded-opentype'), url('../../src/fonts/museosanscyrl-700-webfont.woff2') format('woff2'), url('../../src/fonts/museosanscyrl-700-webfont.woff') format('woff'), url('../../src/fonts/museosanscyrl-700-webfont.ttf') format('truetype'), url('../../src/fonts/museosanscyrl-700-webfont.svg#museo_sans_cyrl700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl100';
+  src: url('../../src/fonts/museosanscyrl-100-webfont.eot');
+  src: url('../../src/fonts/museosanscyrl-100-webfont.eot?#iefix') format('embedded-opentype'), url('../../src/fonts/museosanscyrl-100-webfont.woff2') format('woff2'), url('../../src/fonts/museosanscyrl-100-webfont.woff') format('woff'), url('../../src/fonts/museosanscyrl-100-webfont.ttf') format('truetype'), url('../../src/fonts/museosanscyrl-100-webfont.svg#museo_sans_cyrl100') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url('../../src/fonts/roboto-bold-webfont.eot');
+  src: url('../../src/fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../src/fonts/roboto-bold-webfont.woff2') format('woff2'), url('../../src/fonts/roboto-bold-webfont.woff') format('woff'), url('../../src/fonts/roboto-bold-webfont.ttf') format('truetype'), url('../../src/fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl500';
+  src: url('../../src/fonts/museosanscyrl-500-webfont.eot');
+  src: url('../../src/fonts/museosanscyrl-500-webfont.eot?#iefix') format('embedded-opentype'), url('../../src/fonts/museosanscyrl-500-webfont.woff2') format('woff2'), url('../../src/fonts/museosanscyrl-500-webfont.woff') format('woff'), url('../../src/fonts/museosanscyrl-500-webfont.ttf') format('truetype'), url('../../src/fonts/museosanscyrl-500-webfont.svg#museo_sans_cyrl500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .wrapper {
-  width: 1280px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
+  padding-top: 1px;
+}
+.pink-button {
+  background: #e11847;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-family: 'robotobold';
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 8px 15px;
+  border-bottom: 4px solid #bb143b;
+  outline: none;
+  cursor: pointer;
+}
+.pink-button:active {
+  border-bottom: none;
+  border-top: 4px solid #bb143b;
 }
 .header {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 14px 90px 0 100px;
-  height: 94px;
+  width: 100%;
+  min-width: 1200px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 14px 100px 0 100px;
+  height: 108px;
+  position: fixed;
 }
 .header__logo {
   width: 100px;
@@ -209,8 +267,7 @@ table {
   color: #009bdf;
 }
 .header__tel {
-  float: left;
-  margin-left: 134px;
+  float: right;
   margin-top: 18px;
 }
 .tel__number {
@@ -227,4 +284,105 @@ table {
   color: #009bdf;
   font-family: 'robotolight';
   font-size: 16px;
+}
+.tender {
+  padding-top: 1px;
+}
+.tender__appeal {
+  margin-top: 120px;
+  float: left;
+}
+.appeal {
+  padding-top: 57px;
+  padding-left: 203px;
+  width: 50px;
+}
+.appeal__bold {
+  text-transform: uppercase;
+  font-family: 'museo_sans_cyrl700';
+  color: #333333;
+  font-size: 35px;
+  width: 460px;
+  line-height: 43px;
+  letter-spacing: .6px;
+}
+.appeal__sub {
+  color: #616161;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 16px;
+  margin-top: 36px;
+  margin-left: 2px;
+  width: 345px;
+  line-height: 27px;
+}
+.house {
+  background: url('../../src/img/house.jpg') no-repeat right top;
+  height: 657px;
+}
+.house__input {
+  float: right;
+  background: url('../../src/img/input_background.png') no-repeat;
+  width: 446px;
+  height: 236px;
+  margin-top: 236px;
+  margin-right: 242px;
+}
+.tender-form {
+  height: 161px;
+  width: 347px;
+  margin-top: 37px;
+}
+.tender-input {
+  float: left;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
+  width: 275px;
+  outline: none;
+  margin-top: 10px;
+  font-family: 'robotolight';
+  padding-left: 50px;
+  font-size: 16px;
+}
+.tender-input--square {
+  margin-top: 0px;
+  margin-left: 95px;
+}
+.tender-input--district {
+  margin-left: 58px;
+}
+.tender-input--email {
+  margin-left: 22px;
+}
+.tender-button {
+  margin-top: 67px;
+  margin-left: -128px;
+}
+.house-sub {
+  margin-top: 98px;
+  margin-left: 127px;
+  color: #fff;
+  font-family: 'museo_sans_cyrl700';
+  width: 475px;
+  font-size: 14px;
+  line-height: 23px;
+}
+.tender__foot {
+  width: 615px;
+  margin: 27px auto;
+  padding-left: 4px;
+}
+.slogan {
+  font-family: 'museo_sans_cyrl500';
+  color: #141414;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: .4px;
+}
+.arrow {
+  background: url('../../src/img/down_arrow.png') no-repeat;
+  width: 38px;
+  height: 14px;
+  margin: 11px auto;
 }

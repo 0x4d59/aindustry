@@ -1,7 +1,10 @@
 .header{
-  background: rgba(255,255,255,.5);
-  padding: 14px 90px 0 100px;
-  height: 94px;
+  width: @width;
+  min-width: @minWidth;
+  background: rgba(255,255,255,.85);
+  padding: 14px 100px 0 100px;
+  height: 108px;
+  position: fixed;
 }
 
 // logo
@@ -24,10 +27,6 @@
   float:left;
   margin-left: 60px;
 }
-// .navbar{
-//   float:left;
-//   margin-left: 60px;
-// }
 .navbar__item{
   font-family: 'robotoregular';
   font-size: 14px;
@@ -52,8 +51,7 @@
 
 // phone number
 .header__tel{
-  float: left;
-  margin-left: 134px;
+  float: right;
   margin-top: 18px;
 }
 
