@@ -802,3 +802,28 @@ table {
 .contact-email {
   background: url('../../src/img/contact_email.png') no-repeat 1px 4px;
 }
+.footer {
+  height: 75px;
+  background: #333333;
+  color: #fff;
+}
+.footer__auth {
+  float: left;
+}
+.footer-auth {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 18px;
+  word-spacing: -1px;
+  margin-left: 98px;
+  margin-top: 32px;
+}
+.footer__devlogo {
+  float: right;
+}
+.footer-devlogo {
+  background: url('../../src/img/loft_logo.png') no-repeat 0 0;
+  width: 106px;
+  height: 45px;
+  margin-right: 88px;
+  margin-top: 14px;
+}
