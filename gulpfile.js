@@ -16,7 +16,7 @@ gulp.task('connect', function () {
         root: '',
         livereload: true
     });
-    opn('http://localhost:8080');
+    opn('http://aindustry/');
 });
 
 
