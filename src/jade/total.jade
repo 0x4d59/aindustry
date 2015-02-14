@@ -1,0 +1,32 @@
+div.total
+  div.total__title
+    div.total-title.big-black-title Итоговый расчет
+    div.total-title-sub.land-title-sub Итоговая стоимость расчитывается очень просто
+  div.total__formula
+    div.total-formula.clearfix
+      div.formula__house-cost
+        div.formula-el-cost <span class="price">7 000 000</span> руб.
+        div.formula-el-sub Стоимость загородного дома
+      div.formula__plus
+        div.formula-plus +
+
+      div.formula__land-cost
+        div.formula-el-cost <span class="price">2 000 000</span> руб.
+        div.formula-el-sub Стоимость участка
+      div.formula__plus
+        div.formula-plus -
+        
+      div.formula__apartment-cost
+        div.formula-el-cost <span class="price">X XXX XXX</span> руб.
+        div.formula-el-sub Стоимость вашей квартиры
+        div.formula-el-sml-point Которую мы пока не знаем
+  div.total__form
+    form.total-form
+      input.total-form-input.total-form__square.tender-input(type="text", placeholder="Площадь Вашей квартиры")
+      input.total-form-input.total-form__district.tender-input(type="text", placeholder="Район")
+      input.total-form-input.total-form__email.tender-input(type="text", placeholder="Email и телефон")
+      div.total-form__confid Ваши данные остаются строго конфиденциальными*
+      input.total-form__button.pink-button(type="submit", value="Рассчитать стоимость")
+
+
+
