@@ -4,6 +4,15 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title A-Industry
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
     link(rel="stylesheet", href="dist/css/style.css")
   body
-    include ./header.jade
+    div.wrapper
+      include ./header.jade
+      include ./tender.jade
+      include ./project.jade
+      include ./land.jade
+      include ./total.jade
+      include ./map.jade
+      include ./footer.jade
+      include ./hidden.jade

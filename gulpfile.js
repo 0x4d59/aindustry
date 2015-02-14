@@ -16,12 +16,12 @@ gulp.task('connect', function () {
         root: '',
         livereload: true
     });
-    opn('http://localhost:8080');
+    opn('http://aindustry/');
 });
 
 
 gulp.task('less', function () {
-  return gulp.src(['src/vendor/reset.css', 'src/fonts/fonts.css', 'src/less/style.less'])
+  gulp.src(['src/vendor/reset.css', 'src/fonts/fonts.css', 'src/less/style.less'])
     .pipe(less())
     .pipe(concat('style.css'))
     .pipe(gulp.dest('dist/css'))
@@ -32,7 +32,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('src/js/*.js')
+    gulp.src('src/js/*.js')
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(uglify())
@@ -42,7 +42,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('jade', function () {
-    return gulp.src('src/jade/index.jade')
+    gulp.src('src/jade/index.jade')
         .pipe(gulpJade({
             jade: jade,
             pretty: true

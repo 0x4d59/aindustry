@@ -1,8 +1,9 @@
 //- header.jade
-div.header
+header.header.clearfix
   div.header__logo
-    img.logo(src="src/img/logo.png")
-  div.header__navbar
+    a(href="#")
+      img.logo(src="src/img/logo.png", alt="logo")
+  div.header__navbar.clearfix
     nav.navbar
       li.navbar__item выбор проекта дома
       li.navbar__item выбор земли
@@ -12,4 +13,4 @@ div.header
     div.tel
       div.tel__number (812) 309-29-83
       div.tel__order-call
-        a.order-call Заказать обратный звонок
+        a.order-call(href="#") Заказать обратный звонок
