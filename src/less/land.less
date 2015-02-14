@@ -1,0 +1,144 @@
+.land{}
+.land__title{
+  width: 803px;
+  margin: 33px auto 0;
+}
+.land-title{
+  text-align: center;
+}
+.land-title-sub{
+  font-family: 'museo_sans_cyrl300';
+  font-size: 24px;
+  margin-top: 18px;
+}
+.land__slider{
+  width: 702px;
+  margin: 29px auto 0;
+}
+
+.land-slider__name{
+  font-family: 'museo_sans_cyrl700';
+  font-size: 24px;
+  text-align: center;
+  width: 530px;
+  line-height: 36px;
+  float: left;
+  margin-left: 40px;
+}
+.land-slider__button{
+  border: 1px solid @greyBorder;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  float: left;
+  margin-top: 20px;
+}
+.land-slider__button--prev{
+  background: url('../../src/img/black_land_arrow_left.png') no-repeat 15px 12px;
+  &:hover{
+    background: url('../../src/img/white_land_arrow_left.png') no-repeat 15px 12px,
+                @blue;
+  }
+}
+.land-slider__button--next{
+  background: url('../../src/img/black_land_arrow_right.png') no-repeat 17px 12px;
+  margin-left: 36px;
+  &:hover{
+    background: url('../../src/img/white_land_arrow_right.png') no-repeat 17px 12px,
+                @blue;
+  }
+}
+
+
+.land__button-list{
+  width: 1000px;
+  margin: 38px auto 0;
+  padding-left: 10px;
+}
+.land-button-item{
+  background: #fff;
+  border: 1px solid @sectionBorderGrey;
+  border-radius: 5px;
+  font-family: 'museo_sans_cyrl700';
+  font-size: 24px;
+  padding: 13px 24px 11px;
+  color: @tenderFooterColor;
+  cursor: pointer;
+  margin-left: 18px;
+
+  &:first-child{
+    margin-left: 0;
+  }
+  &:hover{
+    color: #fff;
+    background: @blue;
+  }
+}
+
+.land__preview{
+  margin-top: 32px;
+}
+.land-preview{
+  // todo
+  height: 512px;
+}
+
+.land-preview__map{
+  width: 50.16%;
+  height: inherit;
+  float: left;
+  background: @blue;
+}
+.preview-map{}
+
+.land-preview__char{
+  height: inherit;
+}
+.land-char{
+  width: 49.84%;
+  height: inherit;
+  background: @blue;
+  color: #fff;
+  float:left;
+  font-family: 'museo_sans_cyrl300';
+}
+.land-char__title{
+  margin-top: 59px;
+  margin-left: 95px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  span{
+    font-family: 'museo_sans_cyrl700';
+    font-size: 30px;
+  }
+}
+
+.land-char__icons-list{
+  margin: 33px 0 0 123px;
+}
+.land-char-row{
+  font-size: 18px;
+}
+.land-char-row__left{
+  padding: 2px 46px 2px 34px;
+}
+.land-char-row__right{
+  padding: 11px 36px;
+
+}
+.land-char-ico--electr{
+  background: url('../../src/img/icon_electr.png') no-repeat 1px 10px;
+}
+.land-char-ico--water{
+  background: url('../../src/img/icon_water.png') no-repeat 1px 10px;
+
+}
+
+.land-char__describe{
+  width: 511px;
+  font-size: 14px;
+  margin: 34px 0 0 86px;
+  line-height: 20px;
+}
