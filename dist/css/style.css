@@ -827,3 +827,62 @@ table {
   margin-right: 88px;
   margin-top: 14px;
 }
+.hidden {
+  height: 230px;
+  background: #00a2ea;
+  position: fixed;
+  width: 248px;
+  border-radius: 14px;
+  top: 272px;
+  left: -13px;
+  padding: 21px;
+}
+.hidden--hide {
+  left: -220px;
+  cursor: pointer;
+  background: url('../../src/img/open_window.png') no-repeat 226px 113px, #00a2ea;
+}
+.hidden__button-list {
+  width: 207px;
+  height: 17px;
+  margin: 0 auto;
+}
+.hidden-button-item {
+  cursor: pointer;
+}
+.hide-button {
+  float: left;
+  margin-left: 21px;
+  height: inherit;
+  width: 15px;
+  background: url('../../src/img/close_window.png') no-repeat 0 0;
+}
+.expand-button {
+  height: inherit;
+  float: right;
+  width: 27px;
+  background: url('../../src/img/expand_window.png') no-repeat 0 0;
+}
+.hidden__text {
+  color: #fff;
+  font-family: 'museo_sans_cyrl500';
+  font-size: 14px;
+  text-align: center;
+  width: 182px;
+  margin: 18px auto;
+}
+.hid-text-price {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.hid-text-price span {
+  font-family: 'museo_sans_cyrl700';
+  font-size: 24px;
+}
+.hid-text-tip {
+  margin-top: 10px;
+}
+.order-button {
+  margin-left: 48px;
+  width: 130px;
+}
